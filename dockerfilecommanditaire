@@ -1,0 +1,9 @@
+FROM ubuntu:latest
+
+RUN apt-get update &&\
+apt-get install python3
+pip3 install requests pika flask
+
+COPY commanditaire.py /commanditaire.py
+
+ENTRYPOINT ["/usr/bin/python3","/commanditaire.py"]
