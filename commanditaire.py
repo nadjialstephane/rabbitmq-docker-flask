@@ -43,8 +43,8 @@ def supprimefichier(address,file):
 for list in file_tache,file_resultat:
     file={}
     file["file"] = list
-    supprime_fichier(flask_address,file)
-    creation_fichier(flask_address,file)
+    supprimefichier(flask_address,file)
+    creationfichier(flask_address,file)
 # Génération des taches
 for i in range(chess_size):
     sol[0]=i
